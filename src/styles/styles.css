@@ -127,7 +127,8 @@ nav {
   border-right: 1px solid black;
   border-top: 1px solid black;
   border-radius: 20px 20px 0 0;
-  background-color: white;
+  background-color: #1c2d49;
+  color: white;
   width: 200px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -139,8 +140,9 @@ nav {
 }
 
 .filter__text.active {
-  background-color: #1c2d49;
-  color: white;
+  background-color: white;
+  color: black;
+  z-index: 1;
 }
 
 .search__selectors {
@@ -156,7 +158,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  border: 1px solid black;
   border-radius: 20px;
   background-color: white;
 }
@@ -204,7 +205,7 @@ nav {
           transform: scale(0.95);
 }
 
-.fa-search {
+.buttonIcon {
   font-size: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
