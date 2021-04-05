@@ -9,9 +9,6 @@ function Nav() {
       </div>
       <ul className='nav__list'>
         <li className='nav__list'>
-          <a href='#'>Home</a>
-        </li>
-        <li className='nav__list'>
           <a href='#'>About</a>
         </li>
         <li className='nav__list'>
