@@ -41,7 +41,7 @@
   flex: 1;
   width: 100%;
 
-  h2 {
+  .filter__text {
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-top: 1px solid black;
@@ -55,6 +55,11 @@
       cursor: pointer;
     }
   }
+}
+
+.filter__text.active {
+  background-color: #1c2d49;
+  color: white;
 }
 
 .search__selectors {

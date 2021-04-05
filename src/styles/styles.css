@@ -122,7 +122,7 @@ nav {
   width: 100%;
 }
 
-.search__filters h2 {
+.search__filters .filter__text {
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-top: 1px solid black;
@@ -134,8 +134,13 @@ nav {
   text-align: center;
 }
 
-.search__filters h2:hover {
+.search__filters .filter__text:hover {
   cursor: pointer;
+}
+
+.filter__text.active {
+  background-color: #1c2d49;
+  color: white;
 }
 
 .search__selectors {

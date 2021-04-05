@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { act } from "react-dom/test-utils";
 import "../../styles/styles.css";
 
 function Home() {
+  const [activeFilter, setFilter] = useState(false);
+  const setActive = () => {
+    setFilter(!activeFilter);
+  };
+
   return (
     <div className='Home'>
       <div className='home__container'>
@@ -11,13 +17,34 @@ function Home() {
         <div className='home__search'>
           <div className='search__filters'>
             <div>
-              <h2>Buy</h2>
+              <h2
+                onClick={setActive}
+                className={
+                  activeFilter ? "filter__text active" : "filter__text"
+                }
+              >
+                Buy
+              </h2>
             </div>
             <div>
-              <h2>Sell</h2>
+              <h2
+                onClick={setActive}
+                className={
+                  activeFilter ? "filter__text active" : "filter__text"
+                }
+              >
+                Sell
+              </h2>
             </div>
             <div>
-              <h2>Rent</h2>
+              <h2
+                onClick={setActive}
+                className={
+                  activeFilter ? "filter__text active" : "filter__text"
+                }
+              >
+                Rent
+              </h2>
             </div>
           </div>
           <div className='search__selectors'>
