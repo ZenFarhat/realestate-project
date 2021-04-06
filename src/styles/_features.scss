@@ -1,0 +1,11 @@
+.Features {
+  background-color: white;
+  width: 100%;
+  padding: 2rem;
+}
+
+.features__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

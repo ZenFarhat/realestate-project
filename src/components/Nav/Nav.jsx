@@ -9,13 +9,13 @@ function Nav() {
       </div>
       <ul className='nav__list'>
         <li className='nav__list'>
-          <a href='#'>About</a>
+          <a href='#about'>About</a>
         </li>
         <li className='nav__list'>
-          <a href='#'>Features</a>
+          <a href='#features'>Features</a>
         </li>
         <li className='nav__list'>
-          <a href='#'>Contact</a>
+          <a href='/'>Contact</a>
         </li>
       </ul>
     </nav>
