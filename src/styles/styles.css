@@ -369,6 +369,13 @@ nav {
           flex: 1;
 }
 
+@media only screen and (max-width: 700px) {
+  .about__card {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .Features {
   background-color: white;
   width: 100%;
@@ -387,63 +394,71 @@ nav {
 }
 
 .property {
-  height: 300px;
-  width: 300px;
-  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 450px;
+  height: 200px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  margin: 25px;
   background-color: #fbfbfb;
-  -webkit-box-shadow: 10px 10px 30px gray;
-          box-shadow: 10px 10px 30px gray;
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  -webkit-box-shadow: 10px 10px 10px lightgray;
+          box-shadow: 10px 10px 10px lightgray;
+  margin: 20px 50px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.property:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.property:hover h1 {
+  color: #35b2f2;
 }
 
 .property__img {
-  width: 100%;
-  height: 200px;
+  width: 150px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px 20px 0 0;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border-radius: 20px 0 0 20px;
+  flex: 1;
+}
+
+.property__title {
+  font-size: 1rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .property__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  font-size: 0.8rem;
+  line-height: 2;
+  text-align: center;
 }
 
-.property__text p {
-  background-color: lightgray;
-  border-radius: 20px;
-  padding: 0 0.5rem;
-  color: gray;
-  border: 1px solid gray;
+.addressIcon {
+  color: #35b2f2;
+}
+
+@media only screen and (max-width: 700px) {
+  .property {
+    min-width: 320px;
+  }
+  .property__text {
+    font-size: 0.75rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

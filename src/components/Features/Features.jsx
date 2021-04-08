@@ -16,12 +16,14 @@ function Features() {
       <div className='features__container'>
         <Property
           img={property1}
+          title='Modern City Home'
           type='Villa'
           price='450,000'
           features='4BED 2BATH'
           address='123 Fake St, Suburb, 3012'
         />
         <Property
+          title='Suburban Home'
           img={property2}
           type='Villa'
           price='400P/W'
@@ -29,6 +31,7 @@ function Features() {
           address='456 Notreal St, Suburb, 3213'
         />
         <Property
+          title='Suburban Duplex'
           img={property3}
           type='Duplex'
           price='280,000'
@@ -36,6 +39,7 @@ function Features() {
           address='789 Phony Rd, Suburb, 3333'
         />
         <Property
+          title='Countryside Villa'
           img={property4}
           type='Villa'
           price='380,000'
@@ -43,6 +47,7 @@ function Features() {
           address='123 Doesntexist St, Suburb, 3992'
         />
         <Property
+          title='Suburban Mansion'
           img={property5}
           type='Villa'
           price='500,000'
@@ -50,6 +55,7 @@ function Features() {
           address='123 Unreal St, Suburb, 3221'
         />
         <Property
+          title='Suburban Villa'
           img={property6}
           type='Villa'
           price='300,000'
