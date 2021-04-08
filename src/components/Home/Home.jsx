@@ -28,7 +28,7 @@ function Home() {
     setBuy(false);
   };
 
-  function renderSearch() {
+  const renderSearch = () => {
     if (buy) {
       console.log("rendered buy");
       return <Buy />;
@@ -39,9 +39,7 @@ function Home() {
       console.log("rendered rent");
       return <Rent />;
     }
-
-    console.log("re-rendered search");
-  }
+  };
 
   return (
     <div className='Home'>
